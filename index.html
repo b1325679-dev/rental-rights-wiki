@@ -5,86 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>學生租屋權益知識庫</title>
     <style>
-        /* 定義現代化網站的顏色與變數 */
-        :root {
-            --primary-color: #2563eb;
-            --bg-color: #f1f5f9;
-            --card-bg: #ffffff;
-            --text-main: #334155;
-            --text-muted: #64748b;
+        /* 為了讓你先有一個完整的網頁交作業，這裡暫時將基礎樣式寫在 head 中 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FFFFFF;
+            color: #333333;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        
-        body { 
-            font-family: 'Segoe UI', '微軟正黑體', sans-serif; 
-            background-color: var(--bg-color); 
-            color: var(--text-main); 
-            margin: 0; 
-            padding: 40px 20px; 
-            line-height: 1.7; 
+        h1, h2 {
+            color: #0056b3;
         }
-        
-        /* 讓主體變成一張置中的漂亮白色卡片 */
-        .container { 
-            max-width: 800px; 
-            margin: 0 auto; 
-            background: var(--card-bg); 
-            padding: 40px; 
-            border-radius: 16px; 
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); 
-        }
-
-        h1 { 
-            color: var(--primary-color); 
-            border-bottom: 3px solid #e2e8f0; 
-            padding-bottom: 12px; 
-            margin-top: 0;
-        }
-
-        p.subtitle {
-            color: var(--text-muted);
-            font-size: 1.1em;
-        }
-
-        h2 { color: #0f172a; margin-top: 30px; }
-
-        /* 把無聊的點點清單變成好看的點擊卡片 */
-        ul { list-style: none; padding: 0; }
-        li { 
-            background: #f8fafc; 
-            margin-bottom: 12px; 
-            padding: 18px 20px; 
-            border-radius: 10px; 
-            border: 1px solid #e2e8f0; 
+        a {
+            color: #0056b3;
+            text-decoration: none;
             font-weight: bold;
-            transition: all 0.2s ease-in-out; 
-            cursor: pointer; 
         }
-        
-        /* 滑鼠移過去的浮動變色特效 */
-        li:hover { 
-            transform: translateY(-3px); 
-            border-color: var(--primary-color);
-            box-shadow: 0 4px 6px -1px rgb(37 99 235 / 0.1);
-            color: var(--primary-color);
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        footer {
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666666;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🏠 學生租屋權益知識庫</h1>
-            <p class="subtitle">這是一個基於 AI 與 AGENTS.md 規則開發的知識庫網站。</p>
-        </header>
+    <header>
+        <h1>學生租屋權益知識庫</h1>
+        <p>專為大學生設計的租屋防雷與權益指南，用最白話的方式看懂你的租屋權利。</p>
+    </header>
+
+    <main>
+        <h2>常見租屋知識目錄</h2>
+        <ul>
+            <li><a href="#">押金到底能收多少？退租時怎麼拿回來？</a></li>
+            <li><a href="#">東西壞了誰負責修？修繕責任歸屬</a></li>
+            <li><a href="#">想提前解約怎麼辦？違約金怎麼算？</a></li>
+        </ul>
         
-        <main>
-            <h2>📑 常見租屋爭議指南</h2>
-            <ul>
-                <li>📄 提前解約：押金扣抵與違約金上限規則</li>
-                <li>🔧 修繕責任：房屋設備自然損壞該找誰？</li>
-                <li>⚡ 電費超收：台電最新法規與申訴處理方式</li>
-                <li>🛡️ 點交防雷：退租前必做的 3 個自保步驟</li>
-            </ul>
-        </main>
-    </div>
+        <h2>最新文章：押金規則與退還</h2>
+        <p>依照現行法規，房東向學生收取的押金，最高「絕對不能超過兩個月的租金總額」。如果房東要求收三個月，那是違法的，你可以勇敢拒絕，或者將超過的部分要求抵扣未來的房租。</p>
+        <p>退租時只要你把房間清空、鑰匙交還，並且結清水電瓦斯費，房東就應該把押金全額退還。很多房東會以「自然使用痕跡」為理由扣押金，這是不合理的。只有在你「惡意破壞」時，房東才有權要求賠償。</p>
+    </main>
+
+    <footer>
+        <p>© 2026 學生租屋權益知識庫</p>
+    </footer>
 </body>
 </html>
