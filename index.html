@@ -2,24 +2,89 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>學生租屋權益知識庫</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; line-height: 1.6; }
-        h1 { color: #0056b3; }
+        /* 定義現代化網站的顏色與變數 */
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-muted: #64748b;
+        }
+        
+        body { 
+            font-family: 'Segoe UI', '微軟正黑體', sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-main); 
+            margin: 0; 
+            padding: 40px 20px; 
+            line-height: 1.7; 
+        }
+        
+        /* 讓主體變成一張置中的漂亮白色卡片 */
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: var(--card-bg); 
+            padding: 40px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); 
+        }
+
+        h1 { 
+            color: var(--primary-color); 
+            border-bottom: 3px solid #e2e8f0; 
+            padding-bottom: 12px; 
+            margin-top: 0;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.1em;
+        }
+
+        h2 { color: #0f172a; margin-top: 30px; }
+
+        /* 把無聊的點點清單變成好看的點擊卡片 */
+        ul { list-style: none; padding: 0; }
+        li { 
+            background: #f8fafc; 
+            margin-bottom: 12px; 
+            padding: 18px 20px; 
+            border-radius: 10px; 
+            border: 1px solid #e2e8f0; 
+            font-weight: bold;
+            transition: all 0.2s ease-in-out; 
+            cursor: pointer; 
+        }
+        
+        /* 滑鼠移過去的浮動變色特效 */
+        li:hover { 
+            transform: translateY(-3px); 
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 6px -1px rgb(37 99 235 / 0.1);
+            color: var(--primary-color);
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>🏠 學生租屋權益知識庫</h1>
-        <p>這是一個基於 AI 與 AGENTS.md 規則開發的知識庫網站。</p>
-    </header>
-    <main>
-        <h2>常見租屋爭議</h2>
-        <ul>
-            <li>提前解約押金扣抵規則</li>
-            <li>房屋設備自然損壞修繕責任</li>
-            <li>台電電費超收處理方式</li>
-        </ul>
-    </main>
+    <div class="container">
+        <header>
+            <h1>🏠 學生租屋權益知識庫</h1>
+            <p class="subtitle">這是一個基於 AI 與 AGENTS.md 規則開發的知識庫網站。</p>
+        </header>
+        
+        <main>
+            <h2>📑 常見租屋爭議指南</h2>
+            <ul>
+                <li>📄 提前解約：押金扣抵與違約金上限規則</li>
+                <li>🔧 修繕責任：房屋設備自然損壞該找誰？</li>
+                <li>⚡ 電費超收：台電最新法規與申訴處理方式</li>
+                <li>🛡️ 點交防雷：退租前必做的 3 個自保步驟</li>
+            </ul>
+        </main>
+    </div>
 </body>
 </html>
